@@ -19,7 +19,7 @@ else
     echo "no mods found."
 fi
 
-settings_file="/home/steam/.klei/DoNotStarveTogether/settings.ini"
+settings_file="/home/steam/.klei/DoNotStarveTogether/Cluster_1/Master/server.ini"
 is_master=`crudini --get --verbose "$settings_file" shard is_master`
 echo "CRUDINI: is_master=$is_master"
 if [ $is_master = "false" ]
